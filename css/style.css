@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap");
+.section {
+  padding: 0 calc(50vw - 585px);
+}
+@media screen and (max-width: 1200px) {
+  .section {
+    padding: 0 calc(50vw - 480px);
+  }
+}
+@media screen and (max-width: 992px) {
+  .section {
+    padding: 0 calc(50vw - 370px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 0 calc(50vw - 270px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .section {
+    padding: 0 15px;
+  }
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.section {
+  max-width: 1440px;
+  height: 100vh;
+  min-height: 900px;
+  position: relative;
+  background: #9789F9;
+}
+
+.content {
+  position: absolute;
+  top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 700px;
+}
+
+.box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 370px;
+  height: 90%;
+  background: url(../img/bg-image.png) no-repeat;
+  background-position: center bottom 50px;
+  background-color: #F5F3F9;
+}
+
+.box:hover {
+  -webkit-transform: scale(1.07);
+      -ms-transform: scale(1.07);
+          transform: scale(1.07);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.popular {
+  width: 70px;
+  height: 60px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  visibility: hidden;
+}
+.popular__badge {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.popular__link[title]:hover::after {
+  content: url(../img/tooltip.png);
+  position: absolute;
+  top: -80%;
+  -webkit-transform: rotate(325deg);
+      -ms-transform: rotate(325deg);
+          transform: rotate(325deg);
+}
+
+.box:hover > .popular {
+  visibility: visible;
+}
+
+.price {
+  text-align: center;
+}
+.price__number span {
+  font-size: 60px;
+}
+.price__title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+}
+
+.offers__list {
+  list-style: none;
+  padding: 0;
+}
+.offers__item {
+  margin-bottom: 30px;
+}
+
+.button {
+  text-align: center;
+}
+.button__btn {
+  width: 200px;
+  height: 55px;
+  background: #6FCFFB;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  bottom: -25px;
+  position: relative;
+}
+.button__discount {
+  font-size: 11px;
+  margin: 0;
+  visibility: hidden;
+  bottom: -50px;
+  position: relative;
+  opacity: 0.5;
+}
+
+.box:hover > .box__badge {
+  visibility: visible;
+}
+
+.box:hover > .button > .button__discount {
+  visibility: visible;
+}
+
+.box:hover > .button > .button__btn {
+  top: -25px;
+  background-color: orange;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
